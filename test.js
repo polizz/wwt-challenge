@@ -23,7 +23,7 @@ const reverse = numMatch => {
   const { input, index } = numMatch
   const [ num ] = numMatch
   
-  const working = Array.from(input) 
+  const working = input.split('') 
   working.splice(index, num.length, arrayReverse(num))
   return working.join('')   
 }
