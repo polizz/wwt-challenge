@@ -23,15 +23,15 @@ const reverse = numMatch => {
   const { input, index } = numMatch
   const [ num ] = numMatch
   
-  const working = Array.from(input) 
+  const working = input.split('') 
   working.splice(index, num.length, arrayReverse(num))
   return working.join('')   
 }
 
 const processNumPhrases = str => {
   let num = []
-  
-  while (num = numberPhrase.exec(str)) {
+
+  while ((num = numberPhrase.exec(str)) !== null) {
     str = reverse(num)
   }
   
@@ -42,3 +42,4 @@ const encode = stringToEncode =>
   processNumPhrases(stringToEncode.toLowerCase())
     .map(i => replaceChar[i] || skipPunctuation(i) || shiftConsonant(i))
     .join('')
+    
