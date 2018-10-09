@@ -1,0 +1,19 @@
+{
+  "name": "wwt-challenge",
+  "version": "1.0.0",
+  "description": "World Wide Technology Programmer Challenge",
+  "main": "test.js",
+  "scripts": {
+    "test": "npm test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polizz/wwt-challenge.git"
+  },
+  "author": "polizz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polizz/wwt-challenge/issues"
+  },
+  "homepage": "https://github.com/polizz/wwt-challenge#readme"
+}
