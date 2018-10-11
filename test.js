@@ -17,7 +17,8 @@ const shiftConsonant = con =>
 const skipPunctuation = char =>
   punctuation.test(char) && char
 
-const arrayReverse = str => str.split('').reverse().join('')
+const arrayReverse = str =>
+  str.split('').reverse().join('')
 
 const reverse = numMatch => {
   const { input, index } = numMatch
