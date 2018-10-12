@@ -4,7 +4,7 @@
   "description": "World Wide Technology Programmer Challenge",
   "main": "test.js",
   "scripts": {
-    "test": "npm test.js"
+    "test": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/polizz/wwt-challenge/issues"
   },
-  "homepage": "https://github.com/polizz/wwt-challenge#readme"
+  "homepage": "https://github.com/polizz/wwt-challenge#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
 }
