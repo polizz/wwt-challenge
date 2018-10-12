@@ -44,3 +44,4 @@ const encode = stringToEncode =>
     .map(i => replaceChar[i] || skipPunctuation(i) || shiftConsonant(i))
     .join('')
     
+export default encode
